@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и локация — Tespack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="public/images/logo.svg" alt="Tespack" width="168" height="51">
+      </a>
+
+      <form class="header__search" role="search">
+        <svg class="header__search-icon" width="13" height="13" viewBox="286.5 51 13 13" fill="none" aria-hidden="true">
+          <path d="M298.937 63.4375C299.248 63.1268 299.248 62.6231 298.938 62.3125L295.622 58.9969C296.247 58.1382 296.584 57.1033 296.582 56.0413C296.582 53.2616 294.321 51 291.541 51C288.762 51 286.5 53.2616 286.5 56.0413C286.5 58.8209 288.762 61.0825 291.541 61.0825C292.603 61.0835 293.638 60.7474 294.497 60.1225L297.812 63.4375C298.123 63.7482 298.627 63.7482 298.937 63.4375ZM291.541 59.4903C290.859 59.4904 290.192 59.2881 289.625 58.9091C289.057 58.5301 288.615 57.9914 288.354 57.3611C288.093 56.7308 288.025 56.0372 288.158 55.3681C288.291 54.6989 288.619 54.0843 289.102 53.6019C289.584 53.1194 290.199 52.7909 290.868 52.6578C291.537 52.5247 292.231 52.5931 292.861 52.8542C293.491 53.1153 294.03 53.5575 294.409 54.1248C294.788 54.6921 294.99 55.359 294.99 56.0413C294.989 56.9557 294.626 57.8323 293.979 58.4789C293.332 59.1255 292.456 59.4892 291.541 59.4903Z" fill="#fff"/>
+        </svg>
+        <input class="header__search-input" type="search" placeholder="PET-Преформы" aria-label="Поиск">
+      </form>
+
+      <nav class="header__nav">
+        <a href="index.html" class="header__link">Главная</a>
+        <a href="#" class="header__link header__link--dropdown">
+          Продукция
+          <svg width="16" height="16" viewBox="658 52 16 16" fill="none" aria-hidden="true">
+            <path d="M662 58L666 62L670 58" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="#" class="header__link">Возможности</a>
+        <a href="#" class="header__link">Новости</a>
+        <a href="contacts.html" class="header__link">Контакты</a>
+      </nav>
+
+      <button class="header__lang" type="button">
+        <span>RU</span>
+        <svg width="20" height="20" viewBox="1132 48 20 20" fill="none" aria-hidden="true">
+          <path d="M1137 55.5L1142 60.5L1147 55.5" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <a href="#request" class="header__btn">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container">
+      <div class="hero">
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+          <a href="index.html" class="breadcrumb__item">Главная</a>
+          <svg width="5" height="7" viewBox="141 177 5 7" fill="none" aria-hidden="true">
+            <path d="M142 177.5L144.5 180L142 182.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="breadcrumb__item">Контакты и локация</span>
+        </nav>
+        <h1 class="hero__title">Контакты<br>и локация</h1>
+        <p class="hero__text">Пластиковые изделия, полимерные покрытия,<br>PET-Преформы и многое другое в одном<br>каталоге.</p>
+      </div>
+    </section>
+
+    <!-- Contacts + map -->
+    <section class="location">
+      <div class="location__band" aria-hidden="true"></div>
+      <div class="container location__inner">
+        <div class="card address-card">
+          <div class="address-card__item">
+            <span class="label">Address:</span>
+            <div class="address-card__row">
+              <p class="value">2774 Oak Drive,<br>Plattsburgh, New York</p>
+              <a href="#map" class="arrow-btn" aria-label="Показать на карте">
+                <svg width="20" height="16" viewBox="407.5 474 20 16" fill="none" aria-hidden="true">
+                  <path d="M407.5 482V483H426.5V482V481H407.5V482ZM427.207 482.707C427.598 482.317 427.598 481.683 427.207 481.293L420.843 474.929C420.453 474.538 419.819 474.538 419.429 474.929C419.038 475.319 419.038 475.953 419.429 476.343L425.086 482L419.429 487.657C419.038 488.047 419.038 488.681 419.429 489.071C419.819 489.462 420.453 489.462 420.843 489.071L427.207 482.707Z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="address-card__item">
+            <span class="label">Address:</span>
+            <div class="address-card__row">
+              <p class="value">2774 Oak Drive,<br>Plattsburgh, New York</p>
+              <a href="#map" class="arrow-btn" aria-label="Показать на карте">
+                <svg width="20" height="16" viewBox="407.5 474 20 16" fill="none" aria-hidden="true">
+                  <path d="M407.5 482V483H426.5V482V481H407.5V482ZM427.207 482.707C427.598 482.317 427.598 481.683 427.207 481.293L420.843 474.929C420.453 474.538 419.819 474.538 419.429 474.929C419.038 475.319 419.038 475.953 419.429 476.343L425.086 482L419.429 487.657C419.038 488.047 419.038 488.681 419.429 489.071C419.819 489.462 420.453 489.462 420.843 489.071L427.207 482.707Z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="address-card__item">
+            <span class="label">Address:</span>
+            <div class="address-card__row">
+              <p class="value">2774 Oak Drive,<br>Plattsburgh, New York</p>
+              <a href="#map" class="arrow-btn" aria-label="Показать на карте">
+                <svg width="20" height="16" viewBox="407.5 474 20 16" fill="none" aria-hidden="true">
+                  <path d="M407.5 482V483H426.5V482V481H407.5V482ZM427.207 482.707C427.598 482.317 427.598 481.683 427.207 481.293L420.843 474.929C420.453 474.538 419.819 474.538 419.429 474.929C419.038 475.319 419.038 475.953 419.429 476.343L425.086 482L419.429 487.657C419.038 488.047 419.038 488.681 419.429 489.071C419.819 489.462 420.453 489.462 420.843 489.071L427.207 482.707Z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="address-card__contact">
+            <span class="label">Contact:</span>
+            <p class="value value--contact">
+              <a href="tel:+998911234567">+998 91 123 45 67</a><br>
+              <a href="tel:+998911234567">+998 91 123 45 67</a><br>
+              <a href="mailto:contact@tespack.com">contact@tespack.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card map-card" id="map">
+          <img src="public/images/map.png" alt="Карта: Самарканд">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container faq">
+      <h2 class="faq__title">Частые вопросы</h2>
+      <div class="faq__grid">
+        <div class="faq__col">
+          <div class="faq__item is-open faq__item--accent">
+            <button class="faq__head" type="button" aria-expanded="true">
+              <span class="faq__question">Is there a free trial available?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__head" type="button" aria-expanded="false">
+              <span class="faq__question">Can I change my plan later?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__head" type="button" aria-expanded="false">
+              <span class="faq__question">What is your cancellation policy?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__col">
+          <div class="faq__item is-open">
+            <button class="faq__head" type="button" aria-expanded="true">
+              <span class="faq__question">Is there a free trial available?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__head" type="button" aria-expanded="false">
+              <span class="faq__question">Can I change my plan later?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__head" type="button" aria-expanded="false">
+              <span class="faq__question">What is your cancellation policy?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__body">
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request form -->
+    <section class="container request" id="request">
+      <div class="request__box">
+        <div class="request__info">
+          <h2 class="request__title">Хотите предложить<br>сотрудничество?</h2>
+          <p class="request__text">Предлагая широкий ассортимент<br>надежных и экономичных изделий<br>из ПЭТ</p>
+        </div>
+        <form class="request__form">
+          <input class="request__field" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="request__field" type="tel" name="phone" placeholder="+998 91 123 45 67" required>
+          <button class="request__submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__main">
+        <a href="index.html" class="footer__logo">
+          <img src="public/images/logo-2.svg" alt="Tespack" width="245" height="69">
+        </a>
+
+        <div class="footer__contacts">
+          <span class="label">Address:</span>
+          <p class="value">2774 Oak Drive,<br>Plattsburgh, New York</p>
+
+          <span class="label footer__contact-label">Contact:</span>
+          <p class="value value--contact">
+            <a href="tel:+998911234567">+998 91 123 45 67</a><br>
+            <a href="tel:+998911234567">+998 91 123 45 67</a><br>
+            <a href="mailto:contact@tespack.com">contact@tespack.com</a>
+          </p>
+
+          <div class="footer__socials">
+            <a href="#" aria-label="YouTube">
+              <svg width="27" height="27" viewBox="397 2099 27 27" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#03156B" d="M403.128 2102.68C404.994 2102.3 407.003 2102.09 409.094 2102.09C411.185 2102.09 413.194 2102.3 415.06 2102.68L415.203 2102.71C417.335 2103.14 418.755 2103.43 419.979 2105.01C421.189 2106.56 421.189 2108.37 421.188 2111.16V2113.84C421.189 2116.630 421.189 2118.44 419.979 2119.99C418.755 2121.57 417.335 2121.86 415.203 2122.29L415.06 2122.32C413.194 2122.7 411.185 2122.91 409.094 2122.91C407.003 2122.91 404.994 2122.7 403.128 2122.32L402.985 2122.29C400.853 2121.86 399.433 2121.57 398.209 2119.99C396.998 2118.44 396.999 2116.63 397 2113.84V2111.16C396.999 2108.37 396.998 2106.56 398.209 2105.01C399.433 2103.43 400.853 2103.14 402.985 2102.71L403.128 2102.68ZM408.3 2108.28C408.884 2108.53 409.592 2108.92 410.459 2109.41C410.573 2109.47 410.687 2109.54 410.802 2109.6C411.368 2109.91 411.938 2110.23 412.463 2110.6C412.935 2110.94 413.383 2111.36 413.531 2111.98C413.615 2112.32 413.615 2112.68 413.531 2113.02C413.383 2113.64 412.935 2114.06 412.463 2114.4C411.938 2114.77 411.368 2115.09 410.802 2115.4C410.687 2115.46 410.573 2115.53 410.459 2115.59C409.592 2116.08 408.884 2116.47 408.3 2116.72C407.352 2117.11 406.346 2117.15 405.52 2116.47C405.002 2116.05 404.819 2115.44 404.739 2114.83C404.545 2113.35 404.545 2111.65 404.739 2110.17C404.819 2109.56 405.002 2108.95 405.52 2108.53C406.346 2107.85 407.352 2107.89 408.3 2108.28Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="27" height="27" viewBox="445.09 2099 27 27" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#03156B" d="M451.347 2110.48C450.129 2110.48 449.875 2110.72 449.875 2111.83V2113.84C449.875 2114.96 450.129 2115.19 451.347 2115.19H454.291V2123.25C454.291 2124.36 454.545 2124.59 455.763 2124.59H458.707C459.925 2124.59 460.179 2124.36 460.179 2123.25V2115.19H463.485C464.408 2115.19 464.646 2115.02 464.9 2114.21L465.531 2112.2C465.965 2110.81 465.698 2110.48 464.116 2110.48H460.179V2107.12C460.179 2106.38 460.838 2105.78 461.651 2105.78H465.841C467.058 2105.78 467.312 2105.55 467.312 2104.44V2101.75C467.312 2100.64 467.058 2100.41 465.841 2100.41H461.651C457.586 2100.41 454.291 2103.41 454.291 2107.12V2110.48H451.347Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="27" height="27" viewBox="494.59 2099 27 27" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#03156B" d="M508.158 2100.97C510.623 2100.97 512.558 2100.97 514.07 2101.17C515.618 2101.38 516.847 2101.82 517.813 2102.78C518.778 2103.75 519.214 2104.98 519.422 2106.52C519.625 2108.04 519.625 2109.97 519.625 2112.44V2112.56C519.625 2115.03 519.625 2116.96 519.422 2118.48C519.214 2120.02 518.778 2121.25 517.813 2122.22C516.847 2123.18 515.618 2123.62 514.07 2123.83C512.558 2124.03 510.623 2124.03 508.158 2124.03H508.029C505.565 2124.03 503.629 2124.03 502.118 2123.83C500.569 2123.62 499.34 2123.18 498.375 2122.22C497.409 2121.25 496.974 2120.02 496.766 2118.48C496.562 2116.96 496.562 2115.03 496.563 2112.56V2112.44C496.562 2109.97 496.562 2108.04 496.766 2106.52C496.974 2104.98 497.409 2103.75 498.375 2102.78C499.34 2101.82 500.569 2101.38 502.118 2101.17C503.629 2100.97 505.565 2100.97 508.029 2100.97H508.158ZM513.156 2112.5C513.156 2115.3 510.89 2117.56 508.094 2117.56C505.298 2117.56 503.031 2115.3 503.031 2112.5C503.031 2109.7 505.298 2107.44 508.094 2107.44C510.89 2107.44 513.156 2109.7 513.156 2112.5ZM514.295 2107.44C514.914 2107.44 515.415 2106.93 515.415 2106.31C515.415 2105.69 514.914 2105.19 514.295 2105.19H514.285C513.666 2105.19 513.165 2105.69 513.165 2106.31C513.165 2106.93 513.666 2107.44 514.285 2107.44H514.295Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="27" height="27" viewBox="544.09 2099 27 27" fill="none">
+                <path fill="#03156B" d="M549.719 2109.12H549.156C548.096 2109.12 547.565 2109.12 547.236 2109.45C546.906 2109.78 546.906 2110.31 546.906 2111.38V2120.94C546.906 2122 546.906 2122.53 547.236 2122.86C547.565 2123.19 548.096 2123.19 549.156 2123.19H549.719C550.779 2123.19 551.31 2123.19 551.639 2122.86C551.969 2122.53 551.969 2122 551.969 2120.94V2111.38C551.969 2110.31 551.969 2109.78 551.639 2109.45C551.31 2109.12 550.779 2109.12 549.719 2109.12Z"/>
+                <path fill="#03156B" d="M551.969 2104.34C551.969 2105.74 550.835 2106.88 549.438 2106.88C548.04 2106.880 546.906 2105.74 546.906 2104.34C546.906 2102.95 548.04 2101.81 549.438 2101.81C550.835 2101.81 551.969 2102.95 551.969 2104.34Z"/>
+                <path fill="#03156B" d="M557.398 2109.12H556.469C555.408 2109.12 554.878 2109.12 554.548 2109.45C554.219 2109.78 554.219 2110.31 554.219 2111.38V2120.94C554.219 2122 554.219 2122.53 554.548 2122.86C554.878 2123.19 555.408 2123.19 556.469 2123.19H557.031C558.092 2123.19 558.622 2123.19 558.952 2122.86C559.281 2122.53 559.281 2122 559.281 2120.94L559.281 2117C559.281 2115.14 559.875 2113.63 561.63 2113.63C562.507 2113.63 563.219 2114.38 563.219 2115.31V2120.38C563.219 2121.44 563.219 2121.97 563.548 2122.3C563.878 2122.63 564.408 2122.63 565.469 2122.63H566.03C567.09 2122.63 567.62 2122.63 567.95 2122.3C568.279 2121.97 568.28 2121.44 568.28 2120.38L568.281 2114.19C568.281 2111.39 565.622 2109.13 562.99 2109.13C561.492 2109.13 560.155 2109.86 559.281 2111.01C559.281 2110.3 559.281 2109.950 559.127 2109.68C559.03 2109.52 558.891 2109.38 558.724 2109.28C558.461 2109.13 558.107 2109.12 557.398 2109.12Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__links">
+          <a href="index.html">Главная</a>
+          <a href="#">Продукция</a>
+          <a href="about.html">О компании</a>
+          <a href="#">Возможности</a>
+          <a href="contacts.html">Контакты и адрес</a>
+        </nav>
+
+        <nav class="footer__links footer__links--second">
+          <a href="#">Скачать каталог</a>
+          <a href="#">Сертификаты</a>
+          <a href="#">Лицензии</a>
+          <a href="#">Документация</a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Tespack</span>
+        <span class="footer__credit">Designed by Bek Musabaev</span>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq__head').forEach(function (head) {
+      head.addEventListener('click', function () {
+        var item = head.closest('.faq__item');
+        var open = item.classList.toggle('is-open');
+        head.setAttribute('aria-expanded', open);
+      });
+    });
+  </script>
+</body>
+</html>
