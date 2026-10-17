@@ -132,18 +132,18 @@ body {
     position: absolute;
     left: 2.5px;
     top: 0;
+    display: block;
 }
 
 .header__search-input {
     position: absolute;
     left: 28px;
-    top: -1px;
+    top: -2px;
     width: 172px;
     font-family: var(--font-gt);
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    letter-spacing: -0.011em;
     color: #FFFFFF;
 }
 
@@ -185,21 +185,18 @@ body {
 .header__link--news { left: 399px; }
 .header__link--contacts { left: 477px; }
 
-.header__link--dropdown {
-    gap: 5px;
+.header__chevron {
+    position: absolute;
+    left: 75px;
+    top: 2px;
 }
 
 .header__lang {
     position: absolute;
     left: 1108px;
     top: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
     width: 48px;
     height: 28px;
-    padding-left: 2px;
     background: #F1F1F1;
     border-radius: 8px;
     font-family: var(--font-inter);
@@ -207,6 +204,18 @@ body {
     font-size: 12px;
     line-height: 110%;
     color: #000000;
+}
+
+.header__lang-text {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.header__lang-icon {
+    position: absolute;
+    left: 24px;
+    top: 4px;
 }
 
 .header__btn {
@@ -251,6 +260,7 @@ body {
     left: 0;
     right: 0;
     top: var(--title-top);
+    transform: translateX(var(--title-dx, 0));
     font-family: var(--font-gt);
     font-weight: 700;
     font-size: 64px;
@@ -264,7 +274,7 @@ body {
     left: 50%;
     top: var(--text-top);
     width: max-content;
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% + var(--text-dx, 0px)));
     font-family: var(--font-gt);
     font-weight: 400;
     font-size: 24px;
@@ -274,32 +284,35 @@ body {
 }
 
 .card__btn {
-    left: 50%;
+    left: 552px;
     top: var(--btn-top);
-    transform: translateX(-50%);
     color: #0E0E0E;
 }
 
 .card--1 {
-    --title-top: 183px;
+    --title-top: 185px;
+    --title-dx: -3px;
+    --text-dx: -2px;
     --text-top: 265px;
     --btn-top: 364px;
 }
 
 .card--2 {
-    --title-top: 180px;
+    --title-top: 182px;
+    --title-dx: -1px;
     --text-top: 262px;
     --btn-top: 356px;
 }
 
 .card--3 {
-    --title-top: 184px;
+    --title-top: 186px;
+    --title-dx: -1px;
     --text-top: 266px;
     --btn-top: 362px;
 }
 
 .card--4 {
-    --title-top: 181px;
+    --title-top: 183px;
     --text-top: 263px;
     --btn-top: 355px;
 }
@@ -339,7 +352,7 @@ body {
 .contact__text {
     position: absolute;
     left: 0;
-    top: 156px;
+    top: 157px;
     width: 258px;
     font-family: var(--font-gt);
     font-weight: 400;
@@ -370,6 +383,7 @@ body {
     padding: 10px 32px 10px 18px;
     background: #FFFFFF;
     font-size: 15px;
+    word-spacing: 0.5px;
     color: #000000;
 }
 
@@ -378,6 +392,7 @@ body {
 }
 
 .contact__submit {
+    padding-top: 2px;
     background: var(--light);
     font-size: 16px;
     color: #000000;
@@ -393,11 +408,13 @@ body {
     position: relative;
     height: 646px;
     margin-top: -152px;
-    padding: 182px 0 0;
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    border-bottom: none;
-    border-radius: 24px 24px 0 0;
+    padding: 181px 0 0;
+    width: 1440px;
+    margin-left: 1px;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box,
+        linear-gradient(#EAEAEA, #FFFFFF) border-box;
 }
 
 .footer__top {
@@ -407,13 +424,13 @@ body {
 
 .footer__logo {
     position: absolute;
-    left: 56px;
+    left: 54px;
     top: -1px;
 }
 
 .footer__info {
     position: absolute;
-    left: 396px;
+    left: 394px;
     top: -1px;
     width: 312px;
 }
@@ -471,14 +488,18 @@ body {
     transition: opacity 0.2s;
 }
 
+.footer__social:first-child {
+    margin-right: -1.41px;
+}
+
 .footer__social:hover {
     opacity: 0.7;
 }
 
 .footer__nav {
     position: absolute;
-    left: 956px;
-    top: -1px;
+    left: 954px;
+    top: 0;
     display: flex;
     gap: 60px;
 }
@@ -514,17 +535,17 @@ body {
 
 .footer__copy {
     position: absolute;
-    left: 64px;
+    left: 62px;
 }
 
 .footer__design {
     position: absolute;
-    left: 399px;
+    left: 397px;
 }
 
 .footer__legal {
     position: absolute;
-    left: 956px;
+    left: 954px;
     top: 2px;
     display: flex;
     gap: 60px;
@@ -534,5 +555,7 @@ body {
 
 .footer__legal a {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     transition: opacity 0.2s;
 }
