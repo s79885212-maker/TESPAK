@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #00146b;
+  --blue: #0529d9;
+  --white: #ffffff;
+  --gray: #e5e7f0;
+  --line: #e6e6e6;
+}
+
+body {
+  font-family: "Manrope", "Gilroy", Arial, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  overflow-x: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Canvas 1440px, all blocks positioned with the exact coordinates */
+.page {
+  position: relative;
+  width: 1440px;
+  height: 2150px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 115px;
+  background: var(--navy);
+  border-radius: 0 0 40px 40px;
+  color: var(--white);
+  z-index: 5;
+}
+
+.header__logo {
+  position: absolute;
+  top: 31px;
+  left: 60px;
+  width: 168px;
+  height: 50.66px;
+}
+
+.header__logo img {
+  width: 168px;
+  height: 50.66px;
+  display: block;
+}
+
+.search {
+  position: absolute;
+  top: 48px;
+  left: 284px;
+  width: 200px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--white);
+}
+
+.search input {
+  background: none;
+  border: 0;
+  outline: 0;
+  color: var(--white);
+  font: 500 14px "Manrope", sans-serif;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+.nav {
+  position: absolute;
+  top: 50px;
+  left: 508px;
+  display: flex;
+  gap: 27px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.chev {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.lang {
+  position: absolute;
+  top: 44px;
+  left: 1108px;
+  width: 48px;
+  height: 30px;
+  border: 0;
+  border-radius: 8px;
+  background: #e5e7f0;
+  color: var(--navy);
+  font: 500 13px "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.lang .chev {
+  width: 5px;
+  height: 5px;
+}
+
+.header__btn {
+  position: absolute;
+  top: 32px;
+  left: 1168px;
+  width: 212px;
+  height: 52px;
+  background: var(--white);
+  color: #000;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: absolute;
+  top: 208px;
+  left: 60px;
+  width: 1320px;
+  height: 608px;
+  background: var(--navy);
+  border-radius: 40px;
+  opacity: 1;
+}
+
+.hero__img {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 735px;
+  height: 560px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero__img img {
+  position: absolute;
+  width: 1061px;
+  height: 707px;
+  top: -118px;
+  left: -201px;
+  max-width: none;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.hero__title {
+  position: absolute;
+  top: 32px;
+  left: 785px;
+  width: 520px;
+  color: var(--white);
+  font-size: 52px;
+  line-height: 58px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.hero__text {
+  position: absolute;
+  left: 785px;
+  bottom: 36px;
+  width: 470px;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+/* ---------- DESCRIPTION ---------- */
+.about {
+  position: absolute;
+  top: 841px;
+  left: 286px;
+  width: 870px;
+  height: 438px;
+  opacity: 1;
+}
+
+.about h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.about p + p {
+  margin-top: 54px;
+}
+
+/* ---------- CONTACT FORM ---------- */
+.contact {
+  position: absolute;
+  top: 1329px;
+  left: 170px;
+  width: 1096px;
+  height: 312px;
+  background: var(--blue);
+  border-radius: 40px;
+  color: var(--white);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 10px 30px rgba(5, 41, 217, 0.15);
+}
+
+.contact h3 {
+  position: absolute;
+  top: 52px;
+  left: 55px;
+  width: 440px;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.contact > p {
+  position: absolute;
+  top: 213px;
+  left: 55px;
+  width: 260px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.contact__form {
+  position: absolute;
+  top: 51px;
+  left: 597px;
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact__form input,
+.contact__form button {
+  width: 100%;
+  height: 52px;
+  border: 0;
+  outline: 0;
+  border-radius: 14px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.contact__form input {
+  background: var(--white);
+  color: var(--navy);
+  padding: 0 18px;
+}
+
+.contact__form input::placeholder {
+  color: #8b8f9c;
+}
+
+.contact__form button {
+  background: var(--gray);
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact__form button:hover {
+  background: #d2d6e6;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  position: absolute;
+  top: 1490px;
+  left: 0;
+  width: 1440px;
+  height: 700px;
+  border: 1px solid var(--line);
+  border-radius: 40px 40px 0 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+/* inner coordinates are relative to .footer (top = 1490) */
+.footer__logo {
+  position: absolute;
+  top: 181px;            /* 1671 - 1490 */
+  left: 57px;
+  width: 245px;
+  height: 68.65px;
+}
+
+.footer__logo img {
+  width: 245px;
+  height: 68.65px;
+  display: block;
+}
+
+.footer__address {
+  position: absolute;
+  top: 184px;
+  left: 397px;
+}
+
+.footer__contact {
+  position: absolute;
+  top: 292px;
+  left: 397px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #8b8f9c;
+  margin-bottom: 2px;
+}
+
+.big {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  display: block;
+  color: var(--navy);
+}
+
+.footer__social {
+  position: absolute;
+  top: 424px;
+  left: 397px;
+  display: flex;
+  gap: 28px;
+  font-size: 24px;
+}
+
+.footer__links {
+  position: absolute;
+  top: 180px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer__links li {
+  height: 44px;
+}
+
+.footer__links--1 {
+  left: 957px;
+}
+
+.footer__links--2 {
+  left: 1181px;
+}
+
+.footer__links a:hover {
+  opacity: 0.7;
+}
+
+.footer__bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+.footer__bottom > * {
+  position: absolute;
+  top: 545px;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.copy {
+  left: 65px;
+}
+
+.designed {
+  left: 400px;
+}
+
+.legal {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.legal--1 {
+  left: 957px;
+}
+
+.legal--2 {
+  left: 1104px;
+}
+
+.legal--3 {
+  left: 1267px;
+}

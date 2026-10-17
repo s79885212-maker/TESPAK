@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>Tespack — О компании</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/realize.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="public/images/logo.svg" alt="Tespack">
+      </a>
+
+      <label class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">
+          <circle cx="10" cy="10" r="7"></circle>
+          <line x1="15" y1="15" x2="22" y2="22"></line>
+        </svg>
+        <input type="text" value="РЕТ-Преформы">
+      </label>
+
+      <nav class="nav">
+        <a href="#">Главная</a>
+        <a href="#" class="nav__drop">Продукция <i class="chev"></i></a>
+        <a href="#">О компании</a>
+        <a href="#">Возможности</a>
+        <a href="#">Новости</a>
+        <a href="#">Контакты</a>
+      </nav>
+
+      <button class="lang">RU <i class="chev"></i></button>
+      <a href="#form" class="header__btn">Оставить заявку</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__img">
+        <img src="public/images/realize-1.png" alt="ПЭТ-преформы">
+      </div>
+      <h1 class="hero__title">Всё, что вам нужно мы готовы реализовать</h1>
+      <p class="hero__text">
+        Мы здесь, чтобы осуществить качественную упаковку, любая ваша идея независимо от того, насколько она безумна, всё, что вы хотите, мы можем создать
+      </p>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="about">
+      <h2>Чем занимается Tespack</h2>
+      <p>
+        Мы ведем нашу деятельность на мировом уровне и осознаем свою ответственность. Наша идентичность базируется на таких ценностях, как объективность и честность, партнерство и уважительное отношение. Для нас жизненно важно равное отношение ко всем людям и законопослушное ведение деятельности.
+      </p>
+      <p>
+        Компания TESPACK является семейным предприятием. Мы стремимся к сбалансированному увеличению доходности компании и к укреплению наших глобальных позиций. Устанавливая и развивая стратегические партнерские отношения, мы нацелены на то, чтобы стать для наших клиентов поставщиком номер 1. Таким образом, мы обеспечиваем спокойствие как нашим сотрудникам, так и нашим клиентам и партнерам. В основе нашей деловой деятельности лежит устойчивое, экологически сознательное использование ресурсов, что позволяет обеспечить здоровую окружающую среду и для будущих поколений.
+      </p>
+    </section>
+
+    <!-- FOOTER (rounded light panel) -->
+    <footer class="footer">
+      <a href="#" class="footer__logo">
+        <img src="public/images/logo-2.svg" alt="Tespack">
+      </a>
+
+      <div class="footer__address">
+        <span class="label">Address:</span>
+        <p class="big">2774 Oak Drive,<br>Plattsburgh, New York</p>
+      </div>
+
+      <div class="footer__contact">
+        <span class="label">Contact:</span>
+        <a href="tel:+998911234567" class="big">+998 91 123 45 67</a>
+        <a href="tel:+998911234567" class="big">+998 91 123 45 67</a>
+        <a href="mailto:contact@tespack.com" class="big">contact@tespack.com</a>
+      </div>
+
+      <div class="footer__social">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <ul class="footer__links footer__links--1">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Продукция</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Возможности</a></li>
+        <li><a href="#">Контакты и адрес</a></li>
+      </ul>
+      <ul class="footer__links footer__links--2">
+        <li><a href="#">Скачать каталог</a></li>
+        <li><a href="#">Сертификаты</a></li>
+        <li><a href="#">Лицензии</a></li>
+        <li><a href="#">Документация</a></li>
+      </ul>
+
+      <div class="footer__bottom">
+        <span class="copy">© 2025 Tespack</span>
+        <span class="designed">Designed by Bek Musabaev</span>
+        <a href="#" class="legal legal--1">Privacy Policy</a>
+        <a href="#" class="legal legal--2">Terms of Service</a>
+        <a href="#" class="legal legal--3">Cookies Settings</a>
+      </div>
+    </footer>
+
+    <!-- CONTACT FORM -->
+    <section class="contact" id="form">
+      <h3>Хотите предложить сотрудничество?</h3>
+      <p>Предлагая широкий ассортимент надежных и экономичных изделий из ПЭТ</p>
+
+      <form class="contact__form" onsubmit="return false;">
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="+998 91 123 45 67">
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+  </div>
+</body>
+</html>
