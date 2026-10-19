@@ -45,9 +45,22 @@
             </button>
 
             <a href="#contact" class="btn header__btn">Оставить заявку</a>
+
+            <button class="header__burger" type="button" aria-label="Меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
         </header>
 
         <main class="main">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html" class="breadcrumbs__item">Главная</a>
+                <svg class="breadcrumbs__sep" width="5" height="7" viewBox="74 171.5 5 7" fill="none">
+                    <path d="M75 172.5L77.5 175L75 177.5" stroke="#03156B" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="breadcrumbs__item">История</span>
+            </nav>
+
             <section class="card card--1">
                 <img class="card__img" src="public/images/about-1.png" alt="Производство Tespack">
                 <h1 class="card__title">О компании</h1>
@@ -58,22 +71,22 @@
             <section class="card card--2">
                 <img class="card__img" src="public/images/about-3.png" alt="Оборудование Tespack">
                 <h2 class="card__title">Деятельность</h2>
-                <p class="card__text">Мы здесь, чтобы осуществить качественную<br>упаковку, любая ваша идея независимо от того, насколько<br>она безумна, всё, что вы хотите, мы можем создать</p>
+                <p class="card__text">Мы здесь, чтобы осуществить качественную<br>упаковку, любая ваша идея независимо от<br class="br-m"> того, насколько<br class="br-d"> она безумна, всё, что вы<br class="br-m"> хотите, мы можем создать</p>
                 <a href="#" class="btn card__btn">Подробнее</a>
             </section>
 
             <section class="card card--3">
                 <img class="card__img" src="public/images/about-4.png" alt="Линия производства">
                 <h2 class="card__title">Факты</h2>
-                <p class="card__text">Пластиковая упаковка - упаковочные системы,<br>бутылки, крышки, литые изделия, а также<br>компании с кем мы сотрудничаем</p>
-                <a href="#" class="btn card__btn">Подробнее</a>
+                <p class="card__text">Пластиковая упаковка - упаковочные<br class="br-m"> системы,<br class="br-d"> бутылки, крышки, литые изделия, а<br class="br-m"> также<br class="br-d"> компании с кем мы сотрудничаем</p>
+                <a href="#" class="btn card__btn"><span class="d-only">Подробнее</span><span class="m-only">Читать далее</span></a>
             </section>
 
             <section class="card card--4">
                 <img class="card__img" src="public/images/about-2.png" alt="Продукция Tespack">
                 <h2 class="card__title">Преимущества</h2>
                 <p class="card__text">С 2006 года компания Tespack уверенно<br>занимает своё место на рынке пластиковый<br>упаковке.</p>
-                <a href="#" class="btn card__btn">Подробнее</a>
+                <a href="#" class="btn card__btn"><span class="d-only">Подробнее</span><span class="m-only">Узнать больше</span></a>
             </section>
         </main>
 
@@ -160,5 +173,13 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const burger = document.querySelector('.header__burger');
+        burger.addEventListener('click', () => {
+            const open = document.querySelector('.header').classList.toggle('header--open');
+            burger.setAttribute('aria-expanded', open);
+        });
+    </script>
 </body>
 </html>
