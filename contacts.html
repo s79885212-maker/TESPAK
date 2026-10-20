@@ -6,7 +6,7 @@
   <title>Контакты и локация — Tespack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/contacts.css">
 </head>
 <body>
@@ -47,6 +47,11 @@
       </button>
 
       <a href="#request" class="header__btn">Оставить заявку</a>
+
+      <button class="header__burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -62,7 +67,7 @@
           <span class="breadcrumb__item">Контакты и локация</span>
         </nav>
         <h1 class="hero__title">Контакты<br>и локация</h1>
-        <p class="hero__text">Пластиковые изделия, полимерные покрытия,<br>PET-Преформы и многое другое в одном<br>каталоге.</p>
+        <p class="hero__text">Пластиковые изделия, полимерные покрытия,<br class="br-d"> PET-Преформы и многое другое в одном<br class="br-d"> каталоге.</p>
       </div>
     </section>
 
@@ -131,7 +136,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
           <div class="faq__item">
@@ -140,7 +145,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
           <div class="faq__item">
@@ -149,7 +154,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
         </div>
@@ -160,7 +165,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
           <div class="faq__item">
@@ -169,7 +174,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
           <div class="faq__item">
@@ -178,7 +183,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__body">
-              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br>with a free, personalized 30-minute onboarding call to get you up<br>and running as soon as possible.</p>
+              <p class="faq__answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you<br class="br-d"> with a free, personalized 30-minute onboarding call to get you up<br class="br-d"> and running as soon as possible.</p>
             </div>
           </div>
         </div>
@@ -211,7 +216,7 @@
 
         <div class="footer__contacts">
           <span class="label">Address:</span>
-          <p class="value">2774 Oak Drive,<br>Plattsburgh, New York</p>
+          <p class="value">2774 Oak Drive,<br>Plattsburgh, <span class="nowrap">New York</span></p>
 
           <span class="label footer__contact-label">Contact:</span>
           <p class="value value--contact">
@@ -275,6 +280,13 @@
   </footer>
 
   <script>
+    var header = document.querySelector('.header');
+    var burger = document.querySelector('.header__burger');
+    burger.addEventListener('click', function () {
+      var open = header.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open);
+    });
+
     document.querySelectorAll('.faq__head').forEach(function (head) {
       head.addEventListener('click', function () {
         var item = head.closest('.faq__item');
