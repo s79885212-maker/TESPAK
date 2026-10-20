@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1440">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tespack — О компании</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +11,15 @@
   <link rel="stylesheet" href="./css/realize.css">
 </head>
 <body>
-  
-    
-    <div class="page">
+
+  <div class="page">
 
     <!-- HEADER -->
     <header class="header">
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
       <a href="#" class="header__logo">
         <img src="public/images/logo.svg" alt="Tespack">
       </a>
@@ -45,7 +48,10 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__img">
-        <img src="public/images/realize-1.png" alt="ПЭТ-преформы">
+        <picture>
+          <source media="(max-width: 768px)" srcset="public/images/realize-2.png">
+          <img src="public/images/realize-1.png" alt="ПЭТ-преформы">
+        </picture>
       </div>
       <h1 class="hero__title">Всё, что вам нужно мы готовы реализовать</h1>
       <p class="hero__text">
@@ -125,5 +131,17 @@
     </section>
 
   </div>
+
+  <script>
+    (function () {
+      var burger = document.querySelector('.burger');
+      var header = document.querySelector('.header');
+      if (!burger || !header) return;
+      burger.addEventListener('click', function () {
+        var open = header.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
 </body>
 </html>
