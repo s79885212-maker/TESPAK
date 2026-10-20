@@ -40,52 +40,6 @@ a {
   padding: 0 58px
 }
 
-header {
-  background: var(--navy);
-  color: #fff;
-  height: 116px;
-  max-width: 1440px;
-  margin: 0 auto;
-  border-radius: 20px 20px 0 0
-}
-
-header .wrap {
-  display: flex;
-  align-items: center;
-  height: 100%
-}
-
-.logo {
-  display: inline-flex;
-  color: #fff
-}
-
-.logo svg {
-  width: 170px;
-  height: 52px
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font: inherit;
-  font-size: 13px;
-  color: #fff;
-  border: 0;
-  border-bottom: 1px solid #fff;
-  background: none;
-  padding: 0 0 3px;
-  width: 207px;
-  margin-left: 52px;
-  text-align: left
-}
-
-.search svg {
-  width: 14px;
-  height: 14px
-}
-
 nav {
   display: flex;
   gap: 22px;
@@ -96,14 +50,6 @@ nav {
 
 nav a:hover {
   text-decoration: underline
-}
-
-.lang {
-  font-size: 12px;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  padding: 5px 9px;
-  margin-left: auto
 }
 
 .cta-h {
@@ -396,28 +342,12 @@ footer .top {
     padding-left: 24px;
     padding-right: 24px
   }
-
-  nav,
-  .search {
+nav {
     display: none
   }
 
   .cta-h {
     margin-left: auto
-  }
-
-  .lang {
-    margin-left: auto
-  }
-
-  header {
-    height: 90px;
-    border-radius: 0
-  }
-
-  .logo svg {
-    width: 130px;
-    height: auto
   }
 
   .hero-in {
@@ -785,10 +715,6 @@ footer .top {
     padding-right: 14px;
   }
 
-  .logo svg {
-    width: 100px;
-  }
-
   .cta-h {
     padding: 0 9px;
     font-size: 10px;
@@ -821,26 +747,6 @@ footer .top {
     overflow-x: hidden;
   }
 
-  header {
-    position: relative;
-    z-index: 2;
-    height: 126px;
-    max-width: 100%;
-    margin: 0;
-    padding-top: env(safe-area-inset-top, 0px);
-    border-radius: 0;
-    background: #06146e;
-  }
-
-  header .wrap {
-    position: relative;
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .mobile-menu-toggle {
     position: absolute;
     left: 20px;
@@ -864,31 +770,6 @@ footer .top {
     height: 2px;
     border-radius: 2px;
     background: #fff;
-  }
-
-  .logo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 132px;
-  }
-
-  .logo svg {
-    display: block;
-    width: 132px;
-    height: auto;
-    max-height: 42px;
-  }
-
-  header .search,
-  header nav,
-  header .lang,
-  header .cta-h {
-    display: none !important;
   }
 
   .hero {
